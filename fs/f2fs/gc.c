@@ -1143,8 +1143,10 @@ next_step:
 			int err;
 
 			if (S_ISREG(inode->i_mode)) {
-				if (!f2fs_down_write_trylock(&fi->i_gc_rwsem[READ]))
+				if (!f2fs_down_write_trylock(&fi->i_gc_rwsem[READ])) {
+				    sbi->skipped_gc_rwsem++;
 					continue;
+				}
 				if (!f2fs_down_write_trylock(
 						&fi->i_gc_rwsem[WRITE])) {
 					sbi->skipped_gc_rwsem++;
