@@ -9,8 +9,8 @@ ARCH_MTK_PROJECT := $(subst ",,$(CONFIG_ARCH_MTK_PROJECT))
 MTK_PLATFORM_PATH_ROOT := $(srctree)/drivers/misc/mediatek/mach/$(MTK_PLATFORM)
 MTK_PROJECT_PATH_ROOT := $(srctree)/drivers/misc/mediatek/mach/$(MTK_PLATFORM)/$(ARCH_MTK_PROJECT)
 
-ifeq ($(MTK_PROJECT),sea)
-CONFIG_MTK_PLATFORM_SENSOR := sea
+ifeq ($(MTK_PROJECT),seur)
+CONFIG_MTK_PLATFORM_SENSOR := seur
 KBUILD_CFLAGS += -D__XIAOMI_CAMERA__
 else
 ifeq ($(CONFIG_MACH_MT6781),y)
