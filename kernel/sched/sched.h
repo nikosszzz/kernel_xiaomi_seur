@@ -61,7 +61,6 @@
 #include <linux/security.h>
 #include <linux/stackprotector.h>
 #include <linux/stop_machine.h>
-#include <linux/kthread.h>
 #include <linux/suspend.h>
 #include <linux/swait.h>
 #include <linux/syscalls.h>
