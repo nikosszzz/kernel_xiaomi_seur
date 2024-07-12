@@ -142,7 +142,7 @@ config GENERIC_IRQ_MULTI_HANDLER
 config IRQ_SBALANCE
 	bool "SBalance IRQ balancer"
 	depends on SMP
-	default n
+	default y
 	help
 	  This is a simple IRQ balancer that polls every X number of
 	  milliseconds and moves IRQs from the most interrupt-heavy CPU to the
@@ -185,6 +185,7 @@ config IRQ_SBALANCE_THRESH
 
 config SBALANCE_EXCLUDE_CPUS
 	string "CPUs to exclude from balancing"
+        default "2,7"
 	help
 	  Comma-separated list of CPUs to exclude from IRQ balancing.
 
