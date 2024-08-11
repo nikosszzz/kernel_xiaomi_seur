@@ -5,8 +5,8 @@
 #
 MTK_PLATFORM := $(subst ",,$(CONFIG_MTK_PLATFORM))
 
-ifeq ($(MTK_PROJECT),fleur)
-CONFIG_MTK_PLATFORM_SENSOR := fleur
+ifeq ($(MTK_PROJECT),seur)
+CONFIG_MTK_PLATFORM_SENSOR := seur
 else
 CONFIG_MTK_PLATFORM_SENSOR := mt6781
 endif
