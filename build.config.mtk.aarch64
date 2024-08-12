@@ -7,8 +7,8 @@ LD_LIBRARY_PATH=prebuilts/clang/host/linux-x86/clang-r383902/lib64:$$LD_LIBRARY_
 KERNEL_DIR=kernel-4.19
 CLANG_PREBUILT_BIN=prebuilts/clang/host/linux-x86/clang-r383902/bin
 # for check scripts
-CC=clang
-LD=ld.lld
+CC=clang-14
+LD=ld.lld-14
 AR=llvm-ar
 NM=llvm-nm
 OBJCOPY=llvm-objcopy
